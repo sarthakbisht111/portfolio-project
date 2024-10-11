@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>SKB</title>
+    <script defer src="main.js" ></script>
+    <style>
+      .hid {
+        opacity: 0;
+        transition: opacity 0.5s ease; /* Add a smooth transition */
+      }
+    
+      .show {
+        opacity: 1; /* Fully visible */
+      }
+    
+      /* Example fadeIn animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
+      .fadeIn {
+        animation: fadeIn 1s forwards; /* Animation for fade in */
+      }
+    
+      /* Example slide in animations */
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    
+      .slideInLeft {
+        animation: slideInLeft 0.5s forwards; /* Animation for sliding in from left */
+      }
+    
+      .slideInRight {
+        animation: slideInRight 0.5s forwards; /* Animation for sliding in from right */
+      }
+    </style>
+    
+</head>
+<body class="font-mono " >
+    <div>
+        <div class="header">
+            <header class="w-full bg-#f8fafc text-white shadow-lg  py-4 px-6 block">
+                <nav class="max-w-7xl mx-auto flex justify-between items-center">
+                  <!-- {/* Logo */} -->
+                  <div class="text-2xl font-bold text-brand-blue ">SKB</div>
+                  
+                  <!-- {/* Social links and contact me*/} -->
+                  <div class="flex gap-6">
+                    <a href="#footer" class=" text-brand-pink border-2 border-brand-pink px-4 rounded inline-block">
+                        Contact Me
+                    </a>
+                    <a href="https://github.com/sarthakbisht111" target="_blank" rel="noopener noreferrer" 
+                       class="hover:opacity-80 transition-opacity ">
+                      <img 
+                        src="https://cdn.cdnlogo.com/logos/g/69/github-icon.svg" 
+                        alt="GitHub"
+                        class="w-6 h-6 block"
+                      />
+                    </a>
+                    <a href="https://www.instagram.com/sarthakbiisht/" target="_blank" rel="noopener noreferrer"
+                       class="hover:opacity-80 transition-opacity">
+                      <img 
+                        src="https://cdn.cdnlogo.com/logos/i/92/instagram.svg"
+                        alt="Instagram"
+                        class="w-6 h-6"
+                      />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sarthak-bisht-67b265290/" target="_blank" rel="noopener noreferrer"
+                       class="hover:opacity-80 transition-opacity">
+                      <img 
+                        src="https://cdn.cdnlogo.com/logos/l/66/linkedin-icon.svg"
+                        alt="LinkedIn"
+                        class="w-6 h-6"
+                      />
+                    </a>
+                    
+                      
+                  </div>
+                </nav>
+              </header>
+        </div>
+
+        <div class="hid min-h-screen bg-white p-4 md:p-8" >
+          <div class="mx-auto max-w-7xl">
+            <!-- Name Section -->
+            <div class="py-8 text-center md:py-16">
+              <h1 class="fadeIn font-sans text-4xl text-slate-900 md:text-6xl lg:text-7xl">Sarthak Bisht</h1>
+            </div>
+      
+            <!-- Content Container -->
+            <div class="mt-8 flex flex-col gap-8 md:mt-16 md:flex-row md:gap-12">
+              <!-- Portfolio Box -->
+              <div class="w-full md:w-1/2">
+                <div class="slideInLeft rounded-lg bg-brand-green p-6 shadow-lg md:p-8">
+                  <h2 class="mb-6 font-mono text-2xl md:text-3xl">Welcome to my <span class="text-brand-yellow">Portfolio</span></h2>
+                  <div class="space-y-4 text-white">
+                    <p class="font-mono"><span class="text-pink-400">2023-2027</span> => Persuing Btech at Maharaja Surajmal Intitute Of Technology</p>
+                    <p class="font-mono"><span class="text-pink-400">2024-2025</span> => MSC Web-Dev team member</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- About Text -->
+              <div class="slideInRight w-full md:w-1/2">
+                <p class="text-lg leading-relaxed text-red-800 md:text-xl">I am a dedicated and versatile full stack developer with a passion and hobby for creating efficient and user-friendly web applications. With just starting my journey, I have worked with a variety of technologies, including Javascript, React.js, Node.js and Tailwind. My journey in web development began with a deep curiosity for how things work and how they are made, and it has evolved into a career which i seriously enjoy. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+        <div class="hid w-full max-w-6xl mx-auto px-4 mb-20">
+          <section class="flex flex-col items-center py-10 mb-20">
+              <!-- Section Title -->
+              <h2 class="fadeIn text-3xl font-semibold mb-10" id="scrollDiv">Technologies</h2>
+      
+              <!-- Technology Icons Grid -->
+              <div class="slideInLeft grid grid-cols-5 gap-8 w-full max-w-3xl mx-auto">
+                  <!-- React -->
+                  <div class="flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-16 h-16">
+                  </div>
+                  <!-- Js -->
+                  <div class="flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="js" class="w-16 h-16">
+                  </div>
+                  <!-- Node.js -->
+                  <div class="flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" class="w-16 h-16">
+                  </div>
+                  <!-- Tailwind -->
+                  <div class="flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind" class="w-16 h-16">
+                  </div>
+                  <!-- Solidity -->
+                  <div class="flex items-center justify-center">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg" alt="Solidity" class="w-16 h-16">
+                  </div>
+              </div>
+          </section>
+      </div>
+      
+
+
+            <div class="hid projects">
+              <section class="max-w-6xl mx-auto px-4 py-10">
+                  <h2 class="fadeIn text-3xl font-semibold mb-10 text-center">Projects & Achievements</h2>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                      <!-- Project 1 -->
+                      <div class="slideInLeft flex space-x-4">
+                          <img src="img/Portfolio.png" alt="Portfolio" class="w-32 h-32 object-cover">
+                          <div>
+                              <a href="" target="_blank" rel="noopener noreferrer" class="text-xl font-semibold">Portfolio</a>
+                              <p class="text-gray-400">A fully functional portfolio with responsiveness.</p>
+                              <div class="flex space-x-2 mt-2 text-purple-400">
+                                  <span>HTML</span>
+                                  <span>Tailwind</span>
+                                  <span>JS</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Project 2 -->
+                      <div class="slideInRight flex space-x-4">
+                          <img src="img/Magic-match.jpg" alt="Magic-match" class="w-32 h-32 object-cover">
+                          <div>
+                              <a href="https://www.linkedin.com/in/sarthak-bisht-67b265290/" target="_blank" rel="noopener noreferrer" class="text-xl font-semibold">Magic-match</a>
+                              <p class="text-gray-400">Made a matching card fun to play game.</p>
+                              <div class="flex space-x-2 mt-2 text-purple-400">
+                                  <span>HTML</span>
+                                  <span>Tailwind</span>
+                                  <span>JS</span>
+                                  <span>React</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Project 3 -->
+                      <div class="slideInLeft flex space-x-4">
+                          <img src="img/InnoVortex 2.0.jpg" alt="InnoVortex 2.0" class="w-32 h-32 object-cover">
+                          <div>
+                              <a href="https://www.linkedin.com/in/sarthak-bisht-67b265290/" target="_blank" rel="noopener noreferrer" class="text-xl font-semibold">InnoVortex 2.0</a>
+                              <p class="text-gray-400">Participated in the InnoVortex 2.0 Hackathon and secured the top 3 position in the web3 track and gave the final pitch at Microsoft Office.</p>
+                              <div class="flex space-x-2 mt-2 text-purple-400">
+                                  <span>HTML</span>
+                                  <span>CSS</span>
+                                  <span>Solidity</span>
+                                  <span>React</span>
+                                  <span>Node</span>
+                                  <span>Linea</span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Project 4 -->
+                      <div class="slideInRight flex space-x-4">
+                          <img src="img/Freecodecamp-certificate.jpg" alt="FreeCodeCamp" class="w-32 h-32 object-cover">
+                          <div>
+                              <a href="https://www.linkedin.com/in/sarthak-bisht-67b265290/" target="_blank" rel="noopener noreferrer" class="text-xl font-semibold">FreeCodeCamp</a>
+                              <p class="text-gray-400">Completed the FreeCodeCamp Certification course representing months of hard work.</p>
+                              <div class="flex space-x-2 mt-2 text-purple-400">
+                                  <span>HTML</span>
+                                  <span>CSS</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          
+        
+    </div>
+    <div class="footer-contact-me block bg-brand-blue text-brand-yellow w-full" id="footer">
+      <footer class="py-20">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+            <p class="mb-2">8376936176</p>
+            <a href="mailto:sarthakbisht111@gmail.com" class="underline">sarthakbisht111@gmail.com</a>
+        </div>
+    </footer>
+    </div>
+    <script href ="main.js" ></script>
+</body>
+</html>
